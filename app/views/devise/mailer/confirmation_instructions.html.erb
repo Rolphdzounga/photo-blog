@@ -1,0 +1,9 @@
+<p>Bienvenu</p>
+
+<p>Vous pouvez confirmer votre compte en clickant sur le lien ci dessous</p>
+
+<p>
+	<%= link_to 'Click',
+         confirmation_url(@resource, confirmation_token:@token, locale:I18n.locale) %> 
+
+</p>
