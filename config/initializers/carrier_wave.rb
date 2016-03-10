@@ -8,7 +8,7 @@ if Rails.env.production?
 		#COMMENTS
 		:aws_access_key_id => ENV['RP_ACCESS_KEY'],
 
-		:aws_secret_access_key => ENV['RP_SECRET_KEY']
+		:aws_secret_access_key => ENV['RP_SECRET_KEY'],
 
 		:region => ENV['RP_REGION']
 
