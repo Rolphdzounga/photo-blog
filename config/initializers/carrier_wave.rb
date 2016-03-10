@@ -10,6 +10,8 @@ if Rails.env.production?
 
 		:aws_secret_access_key => ENV['RP_SECRET_KEY']
 
+		:region => ENV['RP_REGION']
+
 		}
 
 		config.fog_directory = ENV['RP_BUCKET']
@@ -17,3 +19,4 @@ if Rails.env.production?
 	end
 
 end
+
