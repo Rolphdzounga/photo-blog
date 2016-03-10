@@ -1,3 +1,5 @@
+
+
 .user-name {
 
 padding: 0 !important ;
@@ -88,7 +90,7 @@ margin-top: 5%;
 
 .btn-danger:hover, .btn-danger:focus {
 
-background-color: darken(#d9534f,20%) !important;
+background-color: darken(#d9534f,20%) !important; 
 
 }
 
@@ -174,3 +176,39 @@ list-style: none;
 padding-left: 0;
 
 }
+
+html{
+	
+	font-family: arial, sans-serif !important; 
+}
+
+$base-color: #0000ff;
+$base-color: #9900ff;
+$row-color: lighten($base-color, 40%);    
+$other-row: darken($row-color, 10%);
+ tbody {
+
+    td:nth-child(odd) { width: 45%; }
+    tr:nth-child(odd) > td:nth-child(odd) {
+        background-color: darken($row-color, 0%) !important; }
+    tr:nth-child(odd) > td:nth-child(even) {
+        background-color: darken($row-color, 7%) !important; }
+    tr:nth-child(even) > td:nth-child(odd) {
+        background-color: darken($other-row, 0%) !important; }
+    tr:nth-child(even) > td:nth-child(even) {
+        background-color: darken($other-row, 7%) !important; }
+
+}
+
+#rolph{
+
+	background-color: $other-row;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+table th, table td { overflow: hidden; }
+
+

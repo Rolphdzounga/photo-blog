@@ -20,6 +20,14 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 
 gem 'omniauth' , '>= 1.0.0'
+
+gem 'stripe'
+
+gem 'carrierwave'#image upload
+gem 'mini_magick'
+gem 'fog' #For prod
+
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
